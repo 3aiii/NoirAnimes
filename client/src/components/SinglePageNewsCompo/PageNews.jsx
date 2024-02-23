@@ -4,15 +4,15 @@ import ReviewCompo from '../SinglePageComponent/Review.component'
 
 const PageNews = () => {
   return (
-    <div className='flex my-[1rem] gap-4'>
-      <div className=' flex-auto w-[80%]'>
+    <div className='flex lg:flex-row flex-col my-[1rem] gap-4'>
+      <div className=' flex-auto lg:w-[80%] w-full'>
         <h1 className='text-5xl border-b-2 border-black mb-4 p-2 '>Mashle: Shinkakusha Kouho Senbatsu Shiken-hen</h1>
         <div className='flex gap-4 bg-white p-2 rounded-md'>
-          <div className='flex-auto w-[80%] flex gap-4'>
+          <div className='flex lg:flex-row flex-col gap-4'>
             <img
               src='https://assets.brandinside.asia/uploads/2016/11/fantastic-beasts-comp.jpg'
-              className='w-[250px] h-[300px] object-cover'
-              />
+              className='lg:w-[250px] w-full lg:h-[300px] h-full object-cover'
+            />
             <p>
               The official X (formerly Twitter) account of Reiji Miyajima's Shiunji-ke no Kodomotachi (The Shiunji Family Children) manga announced on Wednesday that the manga is getting a television anime adaptation.
               Miyajima (Kanojo, Okarishimasu) began drawing the romantic comedy manga in Young Animal magazine in February 2022. Hakusensha shipped the second volume in July 2023, and the third volume is scheduled to be released on February 16.
@@ -29,7 +29,7 @@ const PageNews = () => {
           <ReviewCompo/>  
         </div>
       </div>
-      <div className='flex-auto w-[20%] bg-white'>
+      <div className='flex-auto lg:w-[20%] w-full bg-white'>
         <SideBar/>
       </div>
     </div>

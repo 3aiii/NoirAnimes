@@ -8,7 +8,7 @@ const WidgetMD = ({ data }) => {
         alt='img-widget-xl'
         className='object-cover w-full h-full rounded-md'
       />
-      <p className='absolute bottom-0 text-white md:p-2 p-[4px] 2xl:text-xl lg:text-sm text-[12px] '>{ data.desc }</p>
+      <p className='absolute bottom-0 text-white md:p-2 p-[4px] 2xl:text-xl lg:text-sm text-[12px]'>{ data.desc }</p>
     </div>
   )
 }

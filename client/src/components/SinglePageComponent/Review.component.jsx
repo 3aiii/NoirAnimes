@@ -2,7 +2,7 @@ import React from 'react'
 
 const ReviewCompo = () => {
   return (
-    <div className='flex gap-4 bg-white  rounded-md px-2 py-[4px]'>
+    <div className='flex gap-4 bg-white  rounded-md p-2'>
         <img
             src='https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg'
             alt='img-user-review'
@@ -20,9 +20,9 @@ const ReviewCompo = () => {
                 each one of them should have very well, so much so that I can indisputably say that he left his mark on this work . 
                 story progresses very well
             </p>
-            <div className='flex gap-2 mt-2'>
-                <button className='px-2 text-xl py-[4px] bg-black text-white rounded-md hover:bg-white hover:text-black'>Like : 154</button>
-                <button className='px-2 text-xl py-[4px] bg-black text-white rounded-md hover:bg-white hover:text-black'>Report</button>
+            <div className='flex justify-end gap-2 mt-[4px]'>
+                <button className='px-2 text-md py-[4px] bg-black text-white rounded-md hover:bg-white hover:text-black'>Like : 154</button>
+                <button className='px-2 text-md py-[4px] bg-black text-white rounded-md hover:bg-white hover:text-black'>Report</button>
             </div>
         </div>
     </div>

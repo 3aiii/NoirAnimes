@@ -1,0 +1,52 @@
+## Table List ##
+
+=> Users
+- UserId (int)
+- UserName (string)
+- PassWord (string)
+- FirstName (string)
+- LastName (string)
+- Role (String)
+- img_user (string)
+- Email (string)
+- User_Create_At (date)
+
+=> Animes
+- AnimeId (int)
+- AnimeName (string)
+- AnimeDesc (string)
+- AnimeImg (string)
+- Anime_Create_At (date)
+- AnimeCategroy (int)
+- UserId (id)
+- viewcount (int)
+
+=> Categorys
+- CategoryID (int)
+- CategoryTitle (String)
+
+=> Comments
+- commentId (int)
+- UserId_Commented (int)
+- UserId_Commenter (int)
+- AnimeId (int)
+
+=> Report 
+- ReportId (int)
+- AnimeId (int)
+- ReportComment (string) 
+- User_Reported (int)
+- User_Reporter (int)
+
+=> Recommend
+- Recommend (int)
+- AnimeId (int)
+- View_Count (int)
+- Like_Count (int)
+- Comment_Count (int)
+- Create_At (date)
+
+=> MyList
+- ListId (int)
+- UserId (int)
+- AnimeId (int)

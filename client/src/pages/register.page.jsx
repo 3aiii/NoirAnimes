@@ -4,11 +4,11 @@ import { IoMdArrowForward } from "react-icons/io";
 
 const Register = () => {
   return (
-    <div className='flex justify-center items-center 2xl:h-screen h-[100%]' 
+    <div className='flex justify-center items-center 2xl:h-screen h-screen' 
         style={{ background: 'radial-gradient(circle at 24.1% 68.8%, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 1) 99.4%)' 
     }}>
-      <div className='flex flex-col bg-[#EDEDED] 2xl:w-[30%] lg:w-[35%] lg:my-4 rounded-md p-8'>
-        <h1 className='2xl:text-[52px] lg:text-[44px] text-center my-4'>Sign Up</h1>
+      <div className='flex flex-col bg-[#EDEDED] 2xl:w-[30%] lg:w-[35%] w-[90%] lg:my-4 rounded-md p-8'>
+        <h1 className='2xl:text-[52px] lg:text-[44px] text-[55px] text-center my-4'>Sign Up</h1>
         <form className='flex flex-col gap-4'>
           <input
             type='text'

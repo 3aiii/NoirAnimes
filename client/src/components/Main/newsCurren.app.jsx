@@ -16,7 +16,7 @@ const NewsCurren = () => {
               <Card />
             </div>
             <div className='md:flex-auto 2xl:w-[20%] lg:w-[30%] bg-white md:my-0 my-4'>
-              <SideBar />
+              <SideBar /> 
             </div>
         </div>
     </div>
