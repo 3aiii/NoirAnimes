@@ -68,7 +68,7 @@ const AnimesModel = new mongoose.Schema({
     AnimeCategory : {
         type : mongoose.Schema.Types.ObjectId,
         require : true,
-        ref : 'categorys',
+        ref : 'Categorys'
     },
     UserId : {
         type : mongoose.Schema.Types.ObjectId,

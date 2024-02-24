@@ -1,7 +1,6 @@
 import React from 'react'
 import WelcomeComponent from './welcome.app'
 import NewsCurren from './newsCurren.app'
-import News from './news.app'
 
 const MainContent = () => {
   return (
@@ -9,7 +8,6 @@ const MainContent = () => {
       <div className='flex flex-col 2xl:w-[1280px] lg:w-[900px] md:w-[600px] w-[300px] h-full mb-4'>
         <WelcomeComponent />
         <NewsCurren />
-        <News />
       </div>
     </div>
   )

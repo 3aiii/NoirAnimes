@@ -1,5 +1,13 @@
+const User = require("../models/userModel")
+
 module.exports = {
-    getUser : (req,res)=>{
-        res.send('hi fetchUser')
+    getUser : async (req,res)=>{
+        const { id } = req.params
+        try {
+            const data = await User.findById(id)
+            res.send(data)
+        } catch (error) {
+            res.send(error)
+        }
     },
 }

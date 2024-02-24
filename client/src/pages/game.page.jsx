@@ -10,7 +10,7 @@ const GamePage = () => {
     <>
       <Navbar/>
       <div className='flex justify-center'>
-      <div className='flex flex-col 2xl:w-[1280px] lg:w-[900px] w-[300px] h-full mb-4'>
+        <div className='flex flex-col 2xl:w-[1280px] lg:w-[900px] w-[300px] h-full mb-4'>
           <Label name = 'Game News'/>
           <div className='flex flex-col gap-4'>
             <WelcomeGame />
