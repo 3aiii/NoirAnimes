@@ -19,7 +19,7 @@ const Card = ({ height,post,category }) => {
                             className={`object-cover w-[300px] ${height ? `h-[${height}]` : `: 2xl:h-[250px] lg:h-[180px]`} rounded-md`}
                         />
                         <div>
-                            <Link to={`/anime/1`} className='2xl:text-2xl lg:text-xl my-2 line-clamp-2 overflow-hidden max-w-[300px]'>{ post?.AnimeName }</Link>
+                            <Link to={`/anime/${post?._id}`} className='2xl:text-2xl lg:text-xl my-2 line-clamp-2 overflow-hidden max-w-[300px]'>{ post?.AnimeName }</Link>
                             <div className='flex justify-between my-2 '>
                                 <h6 className='text-lg'>{ date.toLocaleString('en-EN',options) }</h6>
                                 <div className='flex gap-2 items-center'>
@@ -52,7 +52,7 @@ const Card = ({ height,post,category }) => {
                                         className={`object-cover w-[300px] ${height ? `h-[${height}]` : `: 2xl:h-[250px] lg:h-[180px]`} rounded-md`}
                                     />
                                     <div>
-                                        <Link to={`/anime/1`} className='2xl:text-2xl lg:text-xl my-2 line-clamp-2 overflow-hidden max-w-[300px]'>{ post?.AnimeName }</Link>
+                                        <Link to={`/anime/${post?._id}`} className='2xl:text-2xl lg:text-xl my-2 line-clamp-2 overflow-hidden max-w-[300px]'>{ post?.AnimeName }</Link>
                                         <div className='flex justify-between my-2 '>
                                             <h6 className='text-lg'>{ date.toLocaleString('en-EN',options) }</h6>
                                             <div className='flex gap-2 items-center'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import RightReview from './RightContainer.review'
 
-const RightInfo = () => {
+const RightInfo = ({ singlePost }) => {
   return (
     <>
       <div className='flex lg:flex-row flex-col gap-2 border-2'>
@@ -31,7 +31,7 @@ const RightInfo = () => {
             <button className='px-2 py-[5px] bg-black text-white rounded-md hover:bg-white hover:text-black duration-150'>Add to My List</button>
             <div className='flex'>
               <p>Episodes : </p>
-              <p> 0/12</p>
+              <p> 0/<span>{singlePost.Detail?.[0].AnimeEpisode}</span></p>
             </div>
           </div>
         </div>
@@ -39,16 +39,14 @@ const RightInfo = () => {
           className='lg:w-[250px] w-full lg:h-[162px] h-full rounded-md object-cover border-none lg:mb-0 mb-4'
           src="https://www.youtube.com/embed/xKEyo2BOldk?si=za7dCURYE8J8mtBk" 
           title="YouTube video player" 
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          allowfullscreen>
+          allowFullScreen>
         </iframe>
       </div>
       <h2 className='lg:text-2xl text-3xl border-b-2 border-black mb-2'>Synopsis</h2>
       <div className='bg-white p-2 rounded-md mt-2'>
         <p>
-          Ten years ago, "the Gate" appeared and connected the real world with the realm of magic and monsters. To combat these vile beasts, ordinary people received superhuman powers and became known as "Hunters." Twenty-year-old Sung Jin-Woo is one such Hunter, but he is known as the "World's Weakest," owing to his pathetic power compared to even a measly E-Rank. Still, he hunts monsters tirelessly in low-rank Gates to pay for his mother's medical bills.
-          However, this miserable lifestyle changes when Jin-Woo—believing himself to be the only one left to die in a mission gone terribly wrong—awakens in a hospital three days later to find a mysterious screen floating in front of him. This "Quest Log" demands that Jin-Woo completes an unrealistic and intense training program, or face an appropriate penalty. Initially reluctant to comply because of the quest's rigor, Jin-Woo soon finds that it may just transform him into one of the world's most fearsome Hunters.
+          { singlePost.AnimeDesc }
         </p>
       </div>
       <div >

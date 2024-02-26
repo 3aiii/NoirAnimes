@@ -5,6 +5,7 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const userRoutes = require('./routes/userRoutes')
 const postRoutes = require('./routes/animeRoutes')
+const ReccomendRoutes = require('./routes/recommendRoutes')
 const animeModel = require('./models/animeModel')
 const categoryModel = require('./models/categoryModel')
 
@@ -14,6 +15,7 @@ app.use(express.json())
 
 app.use('/user',userRoutes)
 app.use('/post',postRoutes)
+app.use('/recom',ReccomendRoutes)
 
 app.listen(process.env.PORT,()=>{
   console.log(`Server running in port ${process.env.PORT}`);
@@ -40,31 +42,30 @@ mongoose.connect(process.env.MONGO_URL)
 // }
 
 // for ( i = 0 ; i <1 ; i++){
-//     const NewCourse = new animeModel({
-//       AnimeName: "Steins;Gate",
-//       AnimeDesc: "After discovering time travel, a university student and his friends must use their knowledge of it to prevent an evil organization's schemes and the impending apocalypse.",
-//       AnimeImg: "https://example.com/steins_gate.jpg",
-//       AnimeTitle: "Steins;Gate",
-//       Detail: [{
-//           AnimeVideoPreview: "https://example.com/steins_gate_preview.mp4",
-//           AnimeType: "TV",
-//           AnimeEpisode: 24,
-//           AnimeStatus: "Finished",
-//           AnimeAired: new Date("2011-04-06"),
-//           AnimePremiered: "Spring 2011",
-//           AnimeProducers: "TV Tokyo, Media Factory, Kadokawa Shoten, AT-X, Movic, Nitroplus, Hakuhodo DY Media Partners, MAGES., Sentai Filmworks",
-//           AnimeLicensors: "Funimation, Kadokawa Pictures USA",
-//           AnimeStudios: "White Fox",
-//           AnimeSource: "Visual novel",
-//           AnimeGenres: "Thriller, Sci-Fi",
-//           AnimeThemes: "Time Travel, Conspiracy, Psychological",
-//           AnimeDemographic: "Seinen",
-//           AnimeDuration: "24 min. per episode",
-//           AnimeRating: "PG-13 - Teens 13 or older"
-//       }],
-//       AnimeCategory: "621d43f0a0738c7e43e2ee20",
-//       UserId: "621d43f0a0738c7e43e2ee1e",
-//       viewCount: 1800000
-//     })
-//     // NewCourse.save()
+    // const NewCourse = new animeModel({
+    //   AnimeName: "Mushoku Tensei: Jobless Reincarnation",
+    //   AnimeDesc: "Mushoku Tensei follows the story of a 34-year-old NEET who is kicked out of his house and has no motivation for life. After an encounter with a truck, he is reincarnated into a magical world as Rudeus Greyrat, a baby with new chances in life.",
+    //   AnimeImg: "https://thethaiger.com/th/wp-content/uploads/2023/07/%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E-%E0%B8%8B%E0%B8%B5%E0%B8%8B%E0%B8%B1%E0%B8%99-2.png",
+    //   Detail: {
+    //     AnimeVideoPreview: "https://example.com/mushoku-tensei-preview.mp4",
+    //     AnimeType: "TV",
+    //     AnimeEpisode: 11,
+    //     AnimeStatus: "Ongoing",
+    //     AnimeAired: new Date("2021-01-11"),
+    //     AnimePremiered: "Winter 2021",
+    //     AnimeProducers: "Egg Firm",
+    //     AnimeLicensors: "Funimation",
+    //     AnimeStudios: "Studio Bind",
+    //     AnimeSource: "Light Novel",
+    //     AnimeGenres: "Drama, Fantasy, Magic",
+    //     AnimeThemes: "Reincarnation, Isekai",
+    //     AnimeDemographic: "Seinen",
+    //     AnimeDuration: "23 min. per ep.",
+    //     AnimeRating: "R"
+    //   },
+    //   AnimeCategory: "65d9b26e1ec05f5be9bd4aa8",
+    //   UserId: "65d9b26e1ec05f5be9bd4aa8",
+    //   viewCount: 9500
+    // })
+    // NewCourse.save()
 // }
