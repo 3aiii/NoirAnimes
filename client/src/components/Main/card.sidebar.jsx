@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CardSidebar = ({ data }) => {
   return (
-    <div className='flex flex-col w-full md:p-[16px] p-2'>
+    <div className='flex flex-col w-full md:px-[12px] md:py-[6px] p-2'>
       <Link to={`/anime/${data._id}`} 
           className='flex gap-2 hover:scale-90 duration-150'
       >

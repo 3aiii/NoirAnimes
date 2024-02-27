@@ -12,7 +12,7 @@ const SideBar = () => {
     }
     fetch_recom()
   },[])
-
+  
   return (
     <div className='sticky top-0 rounded-md'>
       <h3 className='py-2 px-4 text-2xl  bg-black text-white rounded-tl-md rounded-tr-md'>Recommend news</h3>
@@ -20,7 +20,7 @@ const SideBar = () => {
         {
           recom.map((data)=>(
             <CardSidebar 
-              key={data.id}
+              key={data._id}
               data={ data }
             />
           ))

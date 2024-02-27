@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom';
 const SinglePageAnime = () => {
   const [data,setData] = useState([])
   const animeId  = useParams();
-
+  
   useEffect(()=>{
     const fetch_siglePost = async () =>{
       const { data } = await axios.get(`${getPost}/${animeId.id}`)

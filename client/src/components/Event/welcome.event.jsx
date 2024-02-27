@@ -15,7 +15,7 @@ const WelcomeEvent = () => {
       }
       fetch_Post()
     },[])
-        console.log(posts);
+    
     return (
         <div className='md:flex block my-4 gap-4'>
             <div className='2xl:flex-auto 2xl:w-[70%] lg:w-[60%] w-[100%] md:mb-0 mb-4'>

@@ -17,7 +17,6 @@ const WelcomeManga = () => {
       fetch_Post()
     },[])
     
-    console.log(posts);
     return (
             <div className='md:flex block gap-4'>
                 <div className='flex flex-col flex-auto 2xl:w-[80%] lg:w-[70%] w-[100%] gap-4'>

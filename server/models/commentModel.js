@@ -10,14 +10,15 @@ const CommentModel = new mongoose.Schema({
         require : true,
         ref : 'Users'
     },
+    commentLike : {
+        type : Number,
+        default : 0
+    },
     AnimeId : {
         type : mongoose.Schema.Types.ObjectId,
         require : true,
         ref : 'Animes'
     },
-    commentLink : {
-        type : Number,
-    }
 })
 
 module.exports = mongoose.model('Comments',CommentModel)

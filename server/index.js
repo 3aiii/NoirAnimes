@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 const userRoutes = require('./routes/userRoutes')
 const postRoutes = require('./routes/animeRoutes')
 const ReccomendRoutes = require('./routes/recommendRoutes')
+const commentRoutes = require('./routes/commentRoutes')
 const animeModel = require('./models/animeModel')
 const categoryModel = require('./models/categoryModel')
 
@@ -16,6 +17,7 @@ app.use(express.json())
 app.use('/user',userRoutes)
 app.use('/post',postRoutes)
 app.use('/recom',ReccomendRoutes)
+app.use('/comment',commentRoutes)
 
 app.listen(process.env.PORT,()=>{
   console.log(`Server running in port ${process.env.PORT}`);
